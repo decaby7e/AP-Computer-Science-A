@@ -1,0 +1,17 @@
+Project Title: 18.03 Assignment
+Purpose of Project: To demonstrate an understanding of binary searching algorithms,
+                    sequential searching, and sorting in one program
+Version: 5/22/2019
+Author(s): Jack Polk
+
+==========Post Mortem Review==========
+<+s>: I was able to effectively sort and find objects in my contact book
+      There was minimal errors
+
+<-s>: The code got quite bloated and could possibly be more concise
+
+======================================
+
+Future Improvements:
+   Create a more elegant implementation of the sorting and in displaying the
+   outcomes of my searches.

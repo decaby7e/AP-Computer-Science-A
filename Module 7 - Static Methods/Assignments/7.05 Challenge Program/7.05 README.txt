@@ -1,0 +1,18 @@
+Project Title: 7.05 Challenge Program
+Purpose of Project: The purpose of this program is to approximate pi using the
+                    Monte Carlo method
+Version: 3/17/18
+Author(s): Jack Polk
+
+==========Post Mortem Review==========
+<+s>: I was able to effectively calculate the value of pi using the Monte Carlo
+      method
+      The code is evenly split into functional methods
+
+<-s>: It was difficult to grasp the concept at first
+      The code is slow while only calculating a few digits of pi
+======================================
+
+Future Improvements: In the future, it would be better to use a more efficient
+                     method than the Monte Carlo method and there could be
+                     optimizations made to the existing code

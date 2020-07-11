@@ -1,0 +1,23 @@
+Project Title: 3.04 ASCII Art
+
+Purpose of Project:
+To display ASCII art to the console screen by using String
+literals defined by variables in Java.
+
+Version: 12/03/2017
+
+Author(s): Jack Polk
+
+==========Post Mortem Review==========
+<+s>: Able to learn how to use the string class quickly
+      Had fun making art
+      Didn't have much confusion with strings
+
+<-s>: Sometimes confused "\\" escape sequence with just "\"
+      Had to do some fiddling around to get art to display properly
+=======================================
+
+Future Improvements:
+For the future, I will now be more familiar with escape
+sequences and can perhaps create more creative works of art
+by use of ASCII, the print() function, and String literals.

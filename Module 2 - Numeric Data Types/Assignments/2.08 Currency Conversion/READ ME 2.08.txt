@@ -1,0 +1,14 @@
+Project Title: 2.08 Challenge Program
+Purpose of Project: To convert between various forms of currency and output useful information to the user based on how that currency was spent
+Version: 11/3/17
+Author(s): Jack Polk
+
+==========Post Mortem Review==========
+<+s>: I was able to effectively execute my knowledge about order of operations to complete this program
+      I'm getting more comfortable with the Java syntax
+<-s>: I had some difficulty in correctly using casting
+======================================
+
+Future Improvements:
+In the future, I may be able to use new types of functions and programming techniques to lower the size of my program and make it neater for
+ease of modification and reading.

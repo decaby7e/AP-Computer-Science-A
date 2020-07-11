@@ -1,0 +1,21 @@
+Project Title: 6.04 Challenge Program
+Purpose of Project: To take information about hurricanes from 1995 to 2015, with the range depending on the
+                    user's input, and output that information in order along with some information on
+                    counts and statistics.
+Version: 2/23/18
+Author(s): Jack Polk
+
+==========Post Mortem Review==========
+<+s>: I was able to correctly implement and check the functionality of all aspects
+      of the program
+      There were no visible errors or glitches in the final product
+
+<-s>: I struggled greatly on perfecting the user defined range of years, as it was
+      difficult to do so with several hurricanes being found in a specific year
+      The code is very long
+======================================
+
+Future Improvements: In the future, I could improve the appearance of both the code
+                     itself and the user output to make it easier to read and
+                     reprogram. I could also optimize the code to make it more
+                     efficient.

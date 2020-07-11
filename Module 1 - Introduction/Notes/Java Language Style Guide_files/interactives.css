@@ -1,0 +1,876 @@
+/*======================================
+CSS DOCUMENT FOR CUSTOM INTERACTIVE STYLES, ABOVE THE ILSKIN templates
+======================================*/
+
+/*======================================
+	dialog boxes
+======================================*/
+.ui-dialog.ui-front {
+    min-width: 574px;
+}
+
+div.ui-dialog {
+    /*width: 574px !important;*/
+    padding: 18px;
+    background-color: #f2f0e9;
+    background: #f2f0e9;
+    border-radius: 0px;
+    border: none;
+}
+
+.ui-widget-content {
+    border: none;
+    background-color: #f2f0e9;
+    background: #f2f0e9;
+    color: #222;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+    padding: 5px 15px;
+}
+
+.ui-widget-header {
+    border: none;
+    border-radius: 0px;
+    background: #7d4d24;
+}
+
+.ui-state-default .ui-icon {
+    background-image: url(../images/global/btn_close.png);
+    background-position: 0px 0px;
+}
+
+.ui-dialog .ui-dialog-buttonpane {
+    padding: 5px 0px 0px 0px;
+    border-color: #7d4d24;
+}
+
+.ui-dialog .ui-dialog-buttonpane button {
+    margin: 0px 5px 0px 0px;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    border: none;
+    border-radius: 0px;
+    background: #7d4d24;
+    color: #FFFFFF;
+}
+
+.dialog_backdrop {
+    background: #000000;
+    opacity: .5;
+}
+
+/*======================================
+	interactive container styles
+======================================*/
+div.ilShell {
+    margin: 10px auto 0;
+    position: relative;
+    padding: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background-color: transparent;
+    border: none;
+}
+
+.il_interactive {
+    border-radius: 0px;
+    border: 3px solid #dfdacc;
+    background: #e2decf /*url(../images/global/il_header.png) 14px 10px no-repeat*/;
+    padding: 15px 15px 10px 15px;
+}
+
+.ui_quiz {
+    box-shadow: none;
+}
+
+.mc h2 {
+    display: none;
+}
+
+.mc p, .mc h3 {
+    position: relative;
+}
+
+.exerpt {
+    font-size: 14px;
+    font-weight: normal !important;
+}
+
+.mc h3 {
+    font-style: normal;
+}
+
+.ui_quiz .quiz_content {
+    height: 100% !important;
+    padding-bottom: 0px;
+    position: relative;
+}
+
+.mc p, .mc div, .mc h3, .mc form {
+    position: relative;
+}
+
+.ui_quiz .quiz_navigation {
+    background: #e2decf;
+    border: none;
+    border-top: 1px #c3af9a solid;
+    left: 0px;
+    bottom: 0px;
+    -webkit-box-shadow: inset 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
+    padding: 8px 0px;
+}
+
+.quiz_navigation label {
+    color: #000000;
+    text-shadow: none;
+}
+
+.quiz_results h2 {
+    margin-top: 100px;
+}
+
+.ui-widget-content a {
+    color: #7d4d24;
+}
+
+.ui-widget-content a:hover {
+    color: #c87e3f;
+}
+
+div.ilTextVersion > div.mc_text > ol {
+    list-style: upper-alpha;
+}
+
+/*======================================
+	drag and drop container styles
+======================================*/
+.jDragDrop h2 {
+    margin: 0px 0px 10px 0px;
+}
+
+.jDragDrop .droppables, .jDragDrop .draggables {
+    padding: 10px;
+    border-bottom: 1px solid #4b3b1d;
+}
+
+.droppable .ui-widget-header {
+    color: #FFFFFF;
+    text-align: center;
+    line-height: normal;
+    padding: 4px;
+    min-height: 40px;
+}
+
+.jDragDrop .draggables {
+    min-height: 100px;
+}
+
+.il_interactive .draggable {
+    width: auto;
+    max-width: 300px;
+    line-height: normal;
+}
+
+.il_interactive .drop .bin, .il_interactive .droppable .bin {
+    color: #4b3b1d;
+    text-align: left;
+    min-height: 50px;
+    min-width: 200px;
+    line-height: normal;
+    padding-right: 4px;
+}
+
+.ui_edge_buttons > .ui_edge_button {
+    color: white;
+}
+
+.ui_edge_buttons > .ui_edge_button > .ui-icon {
+    display: none;
+}
+
+.ui_edge_buttons > .ui_edge_button > .ui-button-text {
+    padding: .4em 1em;
+}
+
+/*======================================
+	jTimeline container styles
+======================================*/
+.jTimeline #head {
+    background-color: #c5c7bd !important;
+    margin-bottom: 5px;
+    margin-left: -20px;
+    text-align: left;
+    font-family: Monaco, "Lucida Console", monospace;
+}
+
+.jTimeline #head h1 {
+    color: #010101;
+    font-weight: normal;
+    font-size: 18px;
+    margin: 5px 0 0 0;
+    text-align: left;
+    padding-left: 34px;
+}
+
+.jTimeline #head h3 {
+    color: #7d4d24;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.jTimeline .jcarousel-skin {
+    width: auto;
+    left: 10px;
+    right: 10px;
+}
+
+.jTimeline .timelineInfo {
+    overflow: visible !important;
+}
+
+.jTimeline .timelineInfo .item {
+    width: 100%;
+    overflow: visible;
+}
+
+.jTimeline .timelineInfo .item h3 {
+    margin-top: 5px;
+}
+
+.jTimeline .jcarousel-skin .jcarousel-item {
+    border-left: 1px #f2f0e9 solid;
+    border-right: 1px #938771 solid;
+}
+
+.jTimeline .jcarousel-skin .jcarousel-item a:hover, .jTimeline .jcarousel-skin .jcarousel-item a.jcarousel-item-active {
+    background-color: #7d4d24;
+}
+
+.jTimeline .pull-left {
+    margin-right: 10px;
+    padding: 8px 10px 15px 10px;
+    max-width: 50%;
+}
+.jTimeline .pull-right {
+    margin-left: 10px;
+    padding: 8px 10px 15px 10px;
+    max-width: 50%;
+}
+.jTimeline p {
+    padding:  2px 0 !important;
+}
+.jTimeline img, .ilTextVersion img {
+    margin: 4px !important;
+}
+.jTimeline span.copyright, .ilTextVersion span.copyright {
+    margin: 4px !important;
+}
+/*======================================
+	card stack container styles
+======================================*/
+.polaroid {
+    padding: 10px;
+}
+
+.polaroid h4 {
+    padding: 0px 00px 10px 0px;
+}
+
+.polaroid p {
+    padding: 0px 0px 10px 00px;
+}
+
+/*======================================
+	buttons -n- stuff
+======================================*/
+button.toggleSwitch, button.toggleSwitchFT {
+    margin-left: -85px;
+    width: 175px;
+    border-radius: 0px;
+}
+
+.btn-primary {
+    background-image: none;
+    background: #7d4d24;
+    border: none;
+    border-radius: 0px;
+}
+
+.btn-default, .btn-primary, .btn-success, .btn-info, .btn-warning /*, .btn-danger*/
+{
+    /*-webkit-box-shadow: inset 0px 15px 20px 0px rgba(0, 0, 0, 0.25);*/
+    /*-moz-box-shadow: inset 0px 15px 20px 0px rgba(0, 0, 0, 0.25);*/
+    /*box-shadow: inset 0px 15px 20px 0px rgba(0, 0, 0, 0.25);*/
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.btn-primary:hover, .btn-primary:focus, .ui-button:hover, .btn-danger:hover, .btn-danger:focus {
+    background-color: #c87e3f;
+    color: #FFFFFF;
+}
+
+.ui_quiz .submit {
+    bottom: 55px;
+    right: 0px;
+}
+
+.quiz_next {
+    margin-right: 25px !important;
+}
+
+.ui-button-text {
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+/*======================================
+	MC option button graphics
+======================================*/
+.mc form {
+    position: inherit;
+}
+
+.mc label > input[type="radio"] {
+    display: none;
+}
+
+.mc label > input + span {
+    padding-left: 30px;
+    padding-right: 20px;
+    display: block;
+}
+
+.mc label > input + span:before {
+    content: " ";
+    background: url(../images/global/check_radio_sheet.png);
+    background-position: -40px 0;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 10px;
+    margin-top: 2px;
+}
+
+.mc label > input:checked + span:before {
+    background-position: -60px 0;
+}
+
+/*======================================
+	textversion styles
+======================================*/
+#custom_textVersion, .ilTextVersion, div.textVersion {
+    margin: 20px;
+    padding: 1px;
+    background: #F1F0E8;
+    border: 1px solid #dfdacc;
+}
+div.textVersion {
+    background-color: #dfdacc;
+    border-color: #dfdacc;
+    border-radius: 0px !important;
+    margin-bottom: 0px;
+}
+#custom_textVersion {
+    background-color: rgba(254, 254, 246, 1);
+    border-radius: 10px !important;
+    margin-bottom: 40px;
+    padding: 10px 10px 40px 10px;
+}
+div.textVersion .print {
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+    font-weight: bold;
+}
+.ilTextVersion {
+    padding: 20px;
+    background-color: #dfdacc;
+}
+
+#custom_textVersion h2 {
+    margin: 0px 0px 10px 0px;
+}
+
+#custom_textVersion h3, .ilTextVersion .panel {
+    clear: both;
+    margin-top: 30px;
+}
+
+#custom_textVersion h3 > span {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#custom_textVersion .pull-left {
+    margin-right: 20px !important;
+    margin-bottom: 10px;
+}
+
+#custom_textVersion .pull-right {
+    margin-left: 20px !important;
+    margin-bottom: 10px;
+}
+
+#custom_textVersion .copyright_info, #custom_textVersion .caption_info {
+    position: relative;
+}
+
+/*======================================
+	interactive items FW isn't catching
+======================================*/
+div.img-right {
+    float: right;
+    display: block;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+div.img-right p.copyright {
+    clear: both;
+    font-size: 10px;
+    text-align: center;
+}
+
+.glyphicon-info-sign {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20pt;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    opacity: .6;
+    cursor: pointer;
+}
+
+.glyphicon-info-sign:hover {
+    opacity: .8;
+}
+
+/*======================================
+	some random edits
+======================================*/
+.quiz_results h4 {
+    display: none;
+}
+
+/*======================================
+	code from standard.css for angular
+	==================================*/
+#pageContent .ng_il {
+    line-height: 1.7;
+    font-family: Helvetica, Arial, sans-serif !important;;
+    font-weight: lighter;
+}
+
+#pageContent .ng_il .il_textbtn {
+    margin: 0 auto;
+    width: 180px;
+    text-align: center;
+    padding: 7px;
+    cursor: pointer;
+    background-color: #7d4d24 !important;
+    color: #FFF;
+    font-weight: bold;
+    -moz-border-radius-bottomleft: 0px;
+    -moz-border-radius-tbottomright: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    text-transform: uppercase;
+}
+
+#pageContent .ng_il .il_textbtn:hover {
+    background-color: #c87e3f !important;
+}
+
+#pageContent .ng_il .il_textversion_question h4.slideTitle {
+    background-image: none;
+    background-color: #7d4d24;
+}
+
+#pageContent .ng_il .viewport {
+    position: relative;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 750px;
+    width: 100%;
+    min-height: 500px;
+    overflow: hidden;
+    border: 3px solid #98cbcb;
+    border-radius: 0px;
+    z-index: 0;
+}
+
+#pageContent .ng_il .il_navigation {
+    background-image: none;
+    background-color: #4c493c;
+    color: white;
+    font-size: 12pt;
+    height: 46px;
+}
+
+.ng_il .closeBTN {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #888888;
+    margin-top: -2px;
+    margin-left: 628px;
+    border-radius: 0;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    padding: 6px;
+    padding-left: 13px;
+    position: absolute;
+    background-color: white;
+    /* border: 3px solid black; */
+    font-size: 16pt;
+    background-color: #efefef;
+    /* color: white; */
+    /* border: 3px solid white; */
+}
+
+.ng_il .at-view-fade-in.ng-enter {
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    position: absolute;
+    opacity: 0;
+}
+
+.ng_il .at-view-fade-in.ng-enter-active {
+    opacity: 1;
+}
+
+.ng_il .at-view-fade-out.ng-leave {
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    position: absolute;
+    opacity: 1;
+}
+
+.ng_il at-view-fade-out.ng-leave-active {
+    opacity: 0;
+}
+
+.ng_il .viewWrapper {
+    margin: 0 auto;
+}
+
+.ng_il .animate-show.ng-hide-remove.ng-hide-remove-active {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s
+}
+
+.ng_il .animate-show.ng-hide-add.ng-hide-add-active {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s
+}
+
+/*
+.modal-dialog {
+    position: relative;
+    width: 86%;
+    margin: 7%;
+    margin-top: 30px;
+}
+*/
+/*
+
+.modal {
+    background-color: transparent;
+    position: absolute;
+
+    width: 100%;
+    bottom: 0;
+  
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    overflow-y: scroll;
+    outline: 0;
+}
+*/
+
+.ng_il .showContent.il_well p {
+
+}
+
+/*
+
+.modal-backdrop {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+}
+*/
+
+.ng_il .il_modalbtn {
+    position: absolute;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    bottom: 8px;
+    right: 22px;
+    width: 50px;
+    color: white;
+
+}
+
+.ng_il .il_modalbtn:hover {
+
+    width: 50px;
+    color: white;
+
+}
+
+.ng_il .modal-content {
+    background-color: #f2f0e9 !important;
+    border-radius: 0px;
+}
+
+.ng_il .modal-footer {
+    width: 100%;
+    padding: 34px 20px 20px;
+    margin-top: 15px;
+    text-align: right;
+    background-color: transparent;
+    border-top: 1px solid #e5e5e5;
+}
+
+.ng_il .il_header {
+
+    background-image: none;
+    background-color: #96c8c8;
+}
+
+.ng_il .modal-title {
+    margin: 0;
+    line-height: 1.42857143;
+    background-image: none;
+    background-color: #7d4d24;
+    padding: 1px;
+    border-radius: 0px;
+    text-align: center;
+    color: #FFF;
+}
+
+.ng_il .il_modalbtn {
+    position: absolute;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    bottom: 8px;
+    right: 22px;
+    border-radius: 0px;
+    background-color: #29ABE2;
+}
+
+.ng_il .il_btn:hover {
+    background-color: #3276b1;
+
+}
+
+#pageContent .ng_il .viewport {
+    background-color: #dfdacc;
+    border-color: #dfdacc;
+    border-radius: 0px !important;
+}
+
+.ng_il h2.il_int_title {
+    background-color: #c5c7bd;
+    color: #000;
+    background-size: cover;
+    padding: 10px 10px 10px 30px;
+    margin-top: -24px;
+    border-radius: 0px;
+    text-align: left;
+    margin-bottom: 24px;
+    font-weight: normal;
+    margin-left: -20px;
+    width: 90%;
+    font-family:  Monaco, "Lucida Console", monospace;
+    font-size: 18px;
+}
+
+.ng_il .il_well.directions {
+    background-color: white;
+    border-left: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+.ng_il .modal-body p {
+    font-size: 12pt;
+}
+
+.ng_il .modal-backdrop {
+    height: 500px;
+    border-radius: 0px;
+}
+
+.ng_il .modal {
+    overflow-x: hidden;
+    overflow-y: hidden !important;
+}
+
+.ng_il .popover {
+    margin-top: -7px;
+}
+
+.ng_il .popover-content {
+    padding: 9px 13px;
+}
+
+.ng_il .modal_holder {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    margin-left: -20px;
+}
+
+.ng_il .il_modal-backdrop {
+    padding-top: 20px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 580px;
+    position: absolute;
+    z-index: 999;
+    margin: -20px;
+}
+
+.modal-show {
+    position: relative;
+    min-height: 100px;
+    -webkit-transition: 0.5s ease all;
+    transition: 0.5s ease all;
+    top: 0;
+    opacity: 1;
+}
+
+.modal-show.ng-hide {
+    top: -50px;
+    opacity: 0;
+}
+
+.modal-show.ng-hide-add, .modal-show.ng-hide-remove {
+    display: block !important;
+}
+
+#pageContent .ng_il .cssFade {
+    transition: 0.5s ease all;
+    opacity: 1;
+}
+
+#pageContent .ng_il .cssFade.ng-hide {
+    opacity: 0;
+}
+
+#pageContent .ng_il .il_btns {
+    position: absolute;
+    bottom: 55px;
+    right: 25px;
+}
+
+#pageContent .ng_il .btn-primary {
+    background-color: #7d4d24;
+    border: 3px solid #7d4d24;
+    color: #FFF;
+    width: inherit;
+}
+#pageContent .ng_il .btn-primary:hover {
+    background-color: #c87e3f;
+    border: 3px solid #c87e3f;
+    color: #FFF;
+}
+#pageContent .ng_il div.il_question div.btn-group .btn {
+     background-color: #f2f0e9;
+     border: 1px solid #7d4d24;
+     border-radius: 0 !important;
+     color: #333 !important;
+     width: inherit;
+ }
+#pageContent .ng_il div.il_question div.btn-group .btn.active {
+    color: #FFF !important;
+    font-weight: bold;
+}
+#pageContent .ng_il div.il_question div.btn-group .btn.active .compFont {
+    color: #FFF !important;
+    font-weight: bold;
+}
+#pageContent .ng_il .active {
+    background-color: #7d4d24 !important;
+    color: #FFF !important;
+}
+
+#pageContent .ng_il .il_modalbtn.il_btn {
+    font-weight: bold;
+    width: 52px;
+}
+
+#pageContent .ng_il button.il_wb_submit, #pageContent .ng_il button.il_wb_restart {
+    background-color: #f2f0e9;
+    border-radius: 0px;
+    color: #7d4d24;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#pageContent .ng_il button.il_wb_submit:hover, #pageContent .ng_il button.il_wb_restart:hover {
+    background-color: #c87e3f;
+    color: #FFF;
+}
+
+#pageContent .ng_il .il_textversion button{
+    background-image: none;
+    background-color: #7d4d24;
+    border: none;
+    text-transform: none;
+    text-shadow: none;
+}
+
+#pageContent .ng_il .well.well-lg, #pageContent .ng_il p, #pageContent .ng_il ul {
+    background: rgba(242, 240, 233, 0.85) /* Green background with 30% opacity */;
+    padding: 10px;
+}
+
+.ng_il .il_question, .ng_il .il_wb_remaining_words {
+    background-color: transparent !important;
+}
+
+.il_question_mark {
+    color: white !important;
+    background-color: #7d4d24 !important;
+    border: 1px solid #7d4d24 !important;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 2px 10px;
+    right: 0 !important;
+    top: 0 !important;
+}
+.il_question_mark:hover {
+    background-color: #c87e3f !important;
+    border-color: #c87e3f !important;
+}

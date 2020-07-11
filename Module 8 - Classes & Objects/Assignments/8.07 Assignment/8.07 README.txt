@@ -1,0 +1,18 @@
+Project Title: 8.07 Assignment
+Purpose of Project: To represent a cat as an object in Java with two possible
+                    actions: to run or and/or to meow
+Version: 4/11/18
+Author(s): Jack Polk
+
+==========Post Mortem Review==========
+<+s>: I was able to convert my original program, CatV3, into cat CatV7 successfully
+      The CatV7 class is concise and clear to understand
+
+<-s>: It took referencing the lesson to be able to translate my prior program to the
+      new format
+      There is many variables in the test class
+======================================
+
+Future Improvements: In the future, I could possibly add more methods and make
+                     the program more interactive to make the object seem more
+                     "realistic."

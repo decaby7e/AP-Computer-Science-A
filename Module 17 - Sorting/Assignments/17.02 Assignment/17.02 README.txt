@@ -1,0 +1,19 @@
+Project Title: 17.02 Assignment
+Purpose of Project: To demonstrate an understanding of insertion sorting by use
+                    of Movie arrays with years, names, and studios for sorting
+                    parameters
+Version: 5/2/2019
+Author(s): Jack Polk
+
+==========Post Mortem Review==========
+<+s>: I felt satisfied after understanding the mechanism behind the insertion sort
+
+<-s>: Getting used to this concept is tricky
+      Very time consuming
+      Could be more elegantly implemented
+
+======================================
+
+Future Improvements:
+   Create a more elegant and personally appealing algorithm for insertion sorting
+   that I understand more comfortably.

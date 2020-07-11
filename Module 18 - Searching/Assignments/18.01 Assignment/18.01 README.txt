@@ -1,0 +1,17 @@
+Project Title: 18.01 Assignment
+Purpose of Project: To demonstrate an understanding of searching algorithms
+                    by searching through music objects
+Version: 5/16/2019
+Author(s): Jack Polk
+
+==========Post Mortem Review==========
+<+s>: I was able to effectively traverse and find specific music objects
+      There was minimal errors
+
+<-s>: Somewhat complex in finding several of the same year/artist
+
+======================================
+
+Future Improvements:
+   Create a more elegant implementation of the sorting and in displaying several
+   of the same artist/year

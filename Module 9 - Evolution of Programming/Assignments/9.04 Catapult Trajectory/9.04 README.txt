@@ -1,0 +1,17 @@
+Project Title: 9.04 Catapult Trajectory
+Purpose of Project: To calculate the trajectory of a projectile based on launch angles and launch
+                    velocities using a matrix of values for the storage of calculated values
+Version: 4/19/18
+Author(s): Jack Polk
+
+==========Post Mortem Review==========
+<+s>: I was able to successfully implement a matrix into my program
+      The code is concise and easy to understand
+
+<-s>: It was tricky getting used to traversing matricies
+      It took a while for me to think of using vectors to store speed and angle
+      values
+======================================
+
+Future Improvements: In the future, I would like to add more methods to the class
+                     and add more output variables to make the program more useful.

@@ -1,0 +1,21 @@
+Project Title: 16.05 Assignment
+Purpose of Project: To demonstrate an understanding of using arrays with algorithms
+                    through insertions, deletions, shifting elements, etc.
+Version: 5/1/2019
+Author(s): Jack Polk
+
+==========Post Mortem Review==========
+<+s>: I enjoyed making this from scratch, as it allowed me to organize it better
+      than the previous ElectionTester assignments
+      Using the skills from the past assignments, I completed this assignment with
+      minimal errors
+
+<-s>: Arrays can get messy to work with sometimes
+      The code was getting rather bloated towards completion
+
+======================================
+
+Future Improvements:
+   Possibly condense this program into several separate programs that have general
+   methods for the reviewed algorithms like I would like to in the past assignments
+   and also try using ArrayLists instead.

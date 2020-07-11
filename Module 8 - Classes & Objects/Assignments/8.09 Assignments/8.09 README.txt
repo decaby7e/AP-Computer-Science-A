@@ -1,0 +1,16 @@
+Project Title: 8.09 Assignments
+Purpose of Project: To test Javadocs implementation
+Version: 4/16/18
+Author(s): Jack Polk
+
+==========Post Mortem Review==========
+<+s>: I was able to thoroughly document my code
+      The syntax of Javadocs is easy to understand
+
+<-s>: I couldn't get my program to correctly detect the documentation at first
+      Generating Javadoc HTML files is tricky on my platform (Atom)
+======================================
+
+Future Improvements: In the future, I would like to be able to add more detailed
+                     comments to my code to further document its purpose and
+                     perhaps implement this into my already-made programs

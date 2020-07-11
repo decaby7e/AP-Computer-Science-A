@@ -1,0 +1,15 @@
+Project Title: 14.06 Assignment
+Purpose of Project: To calculate prime numbers within a certain exclusive range
+Version: 02/17/2019
+Author(s): Jack Polk
+
+==========Post Mortem Review==========
+<+s>: This was fun to program and challenged me
+	    I was able to use try/catch for my input, which I learned in Python first
+
+<-s>: It was tricky figuring out how to deduce an algorithm for finding primes
+======================================
+
+Future Improvements:
+   Become more comfortable with object oriented approaches to these kinds of
+   challenges and make my code as efficient as possible

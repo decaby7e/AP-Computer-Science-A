@@ -1,0 +1,17 @@
+Project Title: 13.04 Assignment
+Purpose of Project: To demonstrate overriding through the use of shape objects
+Version: 01/27/2019
+Author(s): Jack Polk
+
+==========Post Mortem Review==========
+<+s>: The errors that I ran into were simple to fix
+	    The use of shapes makes this concept easier to understand
+
+<-s>: It was different than other OOP concepts
+      I was confused when I had to compare 3D shapes to other 3D shapes rather than rectangles
+      as well as I had before. (Understood very well after a few error messages)
+
+======================================
+
+Future Improvements:
+Become more familiar and natural with overriding and using it in my code

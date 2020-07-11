@@ -1,0 +1,18 @@
+Project Title: 16.02 Assignment
+Purpose of Project: To demonstrate an understanding of using arrays and ArrayLists
+                    in standard algorithmic procedures
+Version: 03/28/2019
+Author(s): Jack Polk
+
+==========Post Mortem Review==========
+<+s>: This was fun to program and challenged me
+	    I was able to move quickly between arrays and ArrayLists
+
+<-s>: Had some errors with ArrayLists when not using List<> type to prevent type
+      errors
+
+======================================
+
+Future Improvements:
+   Become as comfortable with ArrayLists as I am with arrays and know when to use
+   one or the other

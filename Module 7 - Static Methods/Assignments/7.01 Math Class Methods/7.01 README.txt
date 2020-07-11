@@ -1,0 +1,17 @@
+Project Title: 7.01 Math Class Methods
+Purpose of Project: To calculate the coordinates of points on a circle that has a radius
+                    defined by the user
+Version: 2/26/18
+Author(s): Jack Polk
+
+==========Post Mortem Review==========
+<+s>: I was able to quickly complete this program
+      I was able to implement error catching loops
+
+<-s>: I could not figure out at one point why my program would not exit
+      a while loop
+      It took some time to perfect everything
+======================================
+
+Future Improvements: In the future, I could implement a function that allows the user
+                     to input their own equation of a circle

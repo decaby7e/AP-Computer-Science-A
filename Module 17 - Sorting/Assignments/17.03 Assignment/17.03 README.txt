@@ -1,0 +1,21 @@
+Project Title: 17.03 Assignment
+Purpose of Project: To demonstrate an understanding of selection sorting by use
+                    of Movie arrays with years, names, and studios for sorting
+                    parameters
+Version: 5/5/2019
+Author(s): Jack Polk
+
+==========Post Mortem Review==========
+<+s>: I was able to understand this algorithm better than the others
+      Coding this only took around half an hour and was simple to change the old
+      code to this
+
+<-s>: Getting used to this concept is tricky
+      Code is still not as ideal as I would like for it to be
+
+======================================
+
+Future Improvements:
+   Create a more elegant implementation of the concept for this code and write
+   my own implementation of this algorithm for a better understanding of the
+   concept

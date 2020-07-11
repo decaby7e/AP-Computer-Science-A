@@ -1,0 +1,19 @@
+Project Title: 17.05 Assignment
+Purpose of Project: To demonstrate an understanding of different types of sorting
+                    by sorting different kinds of items by different properties
+Version: 5/15/2019
+Author(s): Jack Polk
+
+==========Post Mortem Review==========
+<+s>: I was able to effectively translate past learned algorithms into this code
+      There was minimal errors
+
+<-s>: Some errors when going from arrays to ArrayLists
+      Merge sorting is extremely complex compared to the other sorting types
+
+======================================
+
+Future Improvements:
+   Create a more elegant implementation of the concept for this code and write
+   my own implementation of these algorithms for a better understanding of the
+   concept

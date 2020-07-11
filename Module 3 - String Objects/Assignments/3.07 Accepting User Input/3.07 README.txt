@@ -1,0 +1,19 @@
+Project Title: 3.07 Accepting User Input
+Purpose of Project: To adapt the GradesV2 project to accept
+                    user input and return information based
+                    on that input.
+Version: 1/10/18
+Author(s): Jack Polk
+
+==========Post Mortem Review==========
+<+s>: I was able to learn the difference between the next and nextLine methods
+      It was simpler and cleaner than GradesV2
+
+<-s>: It was difficult to adapt to the new methods at first
+      I encountered many syntax errors before getting it right
+======================================
+
+Future Improvements: In the future, it may be beneficial to adapt the program
+                     with new methods and optimizations to increase the use-
+                     ability of the program. Perhaps a GUI would help to create
+                     a more user-friendly experience.

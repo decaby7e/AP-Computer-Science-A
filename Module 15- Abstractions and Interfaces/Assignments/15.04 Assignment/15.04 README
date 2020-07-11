@@ -1,0 +1,16 @@
+Project Title: 15.04 Assignment
+Purpose of Project: To demonstrate the compareTo method and how it relates to <T> interfaces
+Version: 03/18/2019
+Author(s): Jack Polk
+
+==========Post Mortem Review==========
+<+s>: This was fun to program and challenged me
+	    First time using <t> interfaces
+
+<-s>: Tricky figuring out how to loop through the ArrayList in 2 dimensions
+
+======================================
+
+Future Improvements:
+   Become more comfortable with t interfaces and how to effectively implement
+   them in my programming

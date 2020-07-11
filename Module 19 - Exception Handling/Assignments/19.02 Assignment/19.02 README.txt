@@ -1,0 +1,16 @@
+Project Title: 19.02 Assignment
+Purpose of Project: To demonstrate an understanding of exception handling
+Version: 05/26/2019
+Author(s): Jack Polk
+
+==========Post Mortem Review==========
+<+s>: I was able to effectively catch exceptions
+      Program was completed quickly
+
+<-s>: Somewhat difficult to remember the different exception names
+
+======================================
+
+Future Improvements:
+   Implement this concept in my own code and use it to prevent errors in programs without
+   bloated if/else statements.

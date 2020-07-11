@@ -1,0 +1,22 @@
+Snapper = 1
+
+For loop - [Insert number of trials]
+  Generate random values between 1 and 6
+
+  While random value is not 1
+    Add to a counter
+    Generate a random value between 1 and 6
+
+  Print the counter to the text file
+  Reset counter to 0
+
+Close the text file
+
+Open the text file
+
+  While loop to read text file
+    Sum all values in the text file
+
+Close the text file
+Calculate the average
+Print average

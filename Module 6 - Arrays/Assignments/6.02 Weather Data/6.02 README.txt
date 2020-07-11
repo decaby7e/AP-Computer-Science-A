@@ -1,0 +1,18 @@
+Project Title: 6.02 Weather Data
+Purpose of Project:  Annual Weather description: Takes information about the temperatures and
+                     precipitation rates of a city and displays that information along with the
+                     average temperature and the total amount of rain.
+Version: 2/15/18
+Author(s): Jack Polk
+
+==========Post Mortem Review==========
+<+s>: I was able to effectively implement error checking
+      The printf syntax was very useful
+
+<-s>: I made mistakes with printf at first
+      The program had lots of syntax errors at first
+======================================
+
+Future Improvements: In the future, I think it would be interesting to implement
+                     the ability to input custom weather information and maybe
+                     even a GUI for it.

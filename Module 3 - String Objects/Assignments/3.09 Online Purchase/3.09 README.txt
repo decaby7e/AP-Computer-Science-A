@@ -1,0 +1,20 @@
+Project Title: 3.09 Online Purchase
+Purpose of Project: To review all content that was taught in module 3 and
+                    implement said content in a single program that take in
+                    input, performs computations and reformats it, and then out-
+                    put that data to the user.
+Version: 1/12/2018
+Author(s): Jack Polk
+
+==========Post Mortem Review==========
+<+s>: I was able to effectively implement a wide variety of techniques learned
+      in module 3
+      Syntax errors were rare
+
+<-s>: I was not able to implement every learned method, although most were used
+      Formatting was difficult to perfect
+======================================
+
+Future Improvements: In the future, the use of logical operators in this program
+                     may help to circumvent it's fragility, due to the volatile
+                     nature of assuming user input to be perfect.

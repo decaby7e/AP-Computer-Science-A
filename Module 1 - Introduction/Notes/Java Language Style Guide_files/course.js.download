@@ -1,0 +1,274 @@
+// ----------------------------------------------------------------------
+// -- COURSE SPECIFI JS:
+// ----------------------------------------------------------------------
+// -- NOTE: This is where you can add anything you need to do specifically to the course, it will load lastly.
+// -- ABOUT: THis file will over-ride everything else, if you need to customize
+// -- AUTHOR: Vaughn Thompson - WDS
+// ======================================================================
+
+
+// =======================================================
+// custom settings and features
+// =======================================================
+var apush = {
+
+    // =======================================================
+    // code for OBJECTIVES tab - Luis
+    // =======================================================
+    firstCheck: true,
+
+    checklist: function(){																			// REORGANIZE CHECKLIST - REQUESTED BY IDS
+        $(this).prepend( $(this).children().eq(1) );
+    },
+
+    dialog : function(title, directions, btnname, container, firstCheck) {
+
+        //	Default button name
+        btnname = btnname || "Begin";
+        container = container || $('#content');
+        var iDialog = firstCheck || false;
+        var index = $('.dialog').length;
+
+        var new_dialog = $('<div />').attr({
+            class: "dialog",
+            id: 'dialog_' + index,
+            title: title
+        }).html( directions )
+
+
+        $(container).append(new_dialog);
+
+        new_dialog.dialog({
+            buttons: [{
+                text: btnname,
+                click: function() {
+                    $(this).dialog("close");
+
+                    if (container.attr('id') == "overlay"){
+                        container.fadeOut();
+                    }
+                }
+            }],
+
+            draggable: false,
+            resizable: false,
+            close: function () {
+                $(this).dialog('destroy').remove();
+                $(this).trigger('NEW-BUTTON-CLOSED');
+            },
+
+            focus: function(e, ui){
+                if(typeof firstCheck != 'undefined' && firstCheck === true){
+                    $("#menu_outer").focus();
+                    $(document.body).scrollTop(0);
+                }
+            },
+
+            open: function () {
+                $(this).trigger('NEW-BUTTON');
+            },
+            hide: {
+                effect: 'fade',
+                duration: 400
+            },
+            show: {
+                effect: "fade",
+                duration: 400
+            }
+        }).parent().appendTo(container);
+
+        new_dialog.parent().css({
+            top: 50,
+            left: '10%',
+            width: '80%'
+        });
+    },
+    format_wrap: function(){
+        $(this).attr('data-wrap', true);
+    },
+
+
+    // =======================================================
+    // Make sure image container divs match image width
+    // =======================================================
+    adjustImage: function(){
+        $('.image-container img').each(function(index, element) {
+            var imgWidth = $(this).attr('data-width');
+            if ( imgWidth != null ) {
+                imgWidth = imgWidth.replace("px","");
+                //console.log('image width: ' + imgWidth + 'px');
+                $(this).parent().css('width', imgWidth + 'px');
+            } else {
+                var newWidth = $(this).width();
+                //console.log('(no data-width) image width: ' + newWidth + 'px');
+                $(this).parent().css('width', newWidth + 'px');
+            }
+        });
+    },
+
+
+    // =======================================================
+    // Make sure tabs panel is as tall as the tabs block
+    // =======================================================
+    adjustTabs: function() {
+        var tabblockheight = $('.tabs-block').height();
+        if (tabblockheight != null) {
+            //console.log('tab height: ' + tabblockheight + 'px');
+            $('.tabs div.panel-block').css('min-height', tabblockheight + 'px');
+        }
+    },
+
+
+    // =======================================================
+    // MAIN FUNCTION
+    // =======================================================
+    init: function() {
+
+        // =======================================================
+        // code for OBJECTIVES tab - Luis
+        // =======================================================
+        /* REMOVED Objectives link - NS
+        var li = $('<li/>').html(													// Objectives link at the top
+            $('<a />').attr({
+                href: 'javascript:void(0)',
+                class: 'show_objectives',
+                title: 'Objectives for this lesson'
+            }).html('Objectives')
+        );
+        if (current_lesson != 0) {													// Insert if lesson is not 00
+            $('#menu_inner').find('.menu_links').append(li);
+        }
+        $('body').append(															// A new overlay
+            $('<div id="overlay" />').append( $('<div class="ovl-content" />') )
+        );
+        $('.checklist tr').each(apush.checklist);
+        $('#menu_inner')
+            .find('.menu_links')
+            .find('.pop').removeClass('pop').attr({target: "_blank"}).end()
+            .find('.show_objectives').click(apush.objectives);
+
+        setTimeout(function(){
+            $(document).trigger("apush_loaded");
+        }, 500 );
+*/
+
+        // =======================================================
+        // do cool little fading thing in nav menu
+        // =======================================================
+        $('.menubtn, .modlink, .nav_menu_lessons li').mouseenter(function(){
+            $(this).addClass('navhover');
+        });
+        $('.menubtn, .modlink, .nav_menu_lessons li').mouseleave(function(){
+            $(this).removeClass('navhover', 500);
+        });
+
+
+        // =======================================================
+        // Custom footer logo
+        // =======================================================
+        //$('#footer_copyright img').attr('src', '../../global/images/global/flvs_logo_bw.png');
+
+
+        // =======================================================
+        // page load animations
+        // =======================================================
+        $('.moduleTitle').delay(1000).slideDown(300);
+
+
+        // =======================================================
+        // correct icon for save buttons
+        // =======================================================
+        $('.glyphicon-file').addClass('glyphicon-floppy-save').removeClass('glyphicon-file');
+
+
+        // =======================================================
+        // add target for maps link
+        // =======================================================
+        $('.mapslink').attr('target', '_blank');
+
+
+        // =======================================================
+        // fix modal behavior
+        // =======================================================
+        //$('#pageContent').find('a').find('.pop').removeClass('pop').addClass('modal-pop');
+        /*$('.cboxElement').each(function(index, element) {
+         console.log('there is a link');
+         if ( $(this).hasClass('pop') ) {
+         console.log('it has pop');
+         $(this).removeClass('pop').addClass('modal-pop');
+         }
+         });*/
+
+        var ua = navigator.userAgent.toLowerCase();
+        var isAndroid = ua.indexOf("android") > -1;
+        if(!isAndroid) {
+            //console.log('not Android');
+        }else{
+            //console.log('it is Android');
+            $('.cboxElement').each(function(index, element) {
+                $(this).removeClass('modal-pop').addClass('pop');
+                $(this).removeClass('cboxElement');
+                $(this).removeAttr('data-mwidth');
+                $(this).removeAttr('data-mheight');
+            });
+        }
+
+
+        apush.adjustImage();
+
+    },
+
+
+    // =======================================================
+    // code for OBJECTIVES tab - Luis
+    // =======================================================
+    objectives: function(){
+        $.ajax({
+            url: '../../global/js/objectives.json',
+            dataType:"JSON",
+            success: function(response){
+                var m = current_module - 1,									// FW variable. -1 gives correct index
+                    l = current_lesson;
+                if (response[m]){
+                    var o = response[m][l],									// Array
+                        t = 'In the lesson you will:',
+                        ul = $('<ul />');									// Empty list
+                    for (var x=0; x < o.length; x++){
+                        ul.append(
+                            $('<li />').html(o[x])
+                        );
+                    }
+                    apush.dialog('Objectives', [t, ul], "OK");
+                }
+                else {
+                    console.log("This lesson doesn't have objectives");
+                }
+            }
+        });
+    },
+
+}
+
+$(document).ready(apush.init);
+
+//======================================================================================================
+//var ngLibraryLocation = "http://cdn.flvs.net/cdn/il/ng_il/";
+//$.getScript('http://cdn.flvs.net/cdn/il/ng_il/launcher.js', function( data, textStatus, jqxhr ) {});
+
+// var ngLibraryLocation = "http://develop.flvs.net/collaborate/develop/angular_staging/";
+// $.getScript('http://develop.flvs.net/collaborate/develop/angular_staging/launcher.js');
+
+
+var ngLibraryLocation = "http://cdn.flvs.net/cdn/il/ng_il/";
+$.getScript('http://cdn.flvs.net/cdn/il/ng_il/launcher.js');
+
+// =======================================================
+// Custom Menu items now open in separate windows
+// =======================================================
+$('.menupop').off('click', '**' );
+$('.menupop').on('click', function(event) {
+    var popupName = $(this).attr("title") + "Window";
+    var linkurl = $(this).attr("href");
+    window.open(linkurl, popupName, "width=970,height=700,scrollbars=yes");
+    return false;
+});

@@ -1,0 +1,14 @@
+Project Title: 2.04 Assignment (CalculationsV6)
+Purpose of Project: To effectively perform addition, subtraction, multiplication, division, and modulus operations on integers and decimals, which are stored in variables who's names correlate to their data type, and display the output of these operations in a user-friendly manner.
+Version: 10/25/2017
+Author(s): Jack Polk
+
+==========Post Mortem Review==========
+<+s>: I was able to become more familiar with how Java stores and manages different types of data
+	  The experience and time spent on the assignment made working with the Java syntax tremendously easier
+
+<-s>: Had to get used to adding semi-colons; the script-like feel of java makes it look like Python in my eyes, leading to me not remembering that I need to close statements
+	  Adding variables to every section was tedious and mistakes were common
+======================================
+
+Future Improvements: Become more familiar with the Java programming syntax and language in order to more effectively and quickly implement my ideas into code.

@@ -1,0 +1,173 @@
+// ----------------------------------------------------------------------
+// -- COURSE SPECIFI JS:
+// ----------------------------------------------------------------------
+// -- NOTE: This is where you can add anything you need to do specifically to the course homepage, it will load lastly.
+// -- ABOUT: THis file will over-ride everything else, if you need to customize
+// -- AUTHOR: Vaughn Thompson - WDS
+// ======================================================================
+
+$( 'div #menu' ).remove();
+		
+function createIndexLessons(){
+
+	// add in lesson number to breadcrumb
+	if ("undefined" == typeof isexternal){
+		$('.breadcrumbs_num').html(FLVS.Sitemap.module[current_module].lesson[current_lesson].num);
+		$('.breadcrumbs_num, .breadcrumbs_lesson').css('font-weight','normal');
+	}
+	
+	// Create Popup Menu
+	createMenuLessons();
+	
+	// Event for Menu Button
+	$('.menubtn, .menubtn_mobile').click(function(){
+		$('.navnoheader').removeClass('navnohover');
+		$('.nav_menu_lessons').hide();
+				
+		if(!$('#nav_menu').is(':visible')){
+			$('body').append('<div class="menu_backdrop">&nbsp;</div>');
+			$('.menu_backdrop').click(function(){
+				$('#nav_menu').fadeToggle('fast');
+				$(this).remove();
+			});
+		} else {
+			$('.menu_backdrop').remove();
+		}
+				
+		$('#nav_menu').fadeToggle('fast');
+		
+		//in case home nav menu is open
+		$('.opened').fadeOut();
+		$('#arrow').fadeOut();
+		$('.div_lessons').removeClass('opened');
+		$('#lesson_menu').fadeOut();
+		$('.lesson_backdrop').fadeOut();
+				
+	});
+		
+	// Event for Showing Menu Lessons
+	$('.modlink').click(function(){
+		$('.nav_menu_lessons').hide();
+		$(this).next().stop().fadeIn('fast');
+	});
+	
+	// =======================================================
+	// do cool little fading thing
+	// =======================================================
+	$('.menubtn, .modlink, .nav_menu_lessons li').mouseenter(function(){
+		$(this).addClass('navhover');
+	});
+	$('.menubtn, .modlink, .nav_menu_lessons li').mouseleave(function(){
+		$(this).removeClass('navhover', 500);
+	});
+	$('.moduleselect, .lessonlink').mouseenter(function(){
+		$(this).addClass('homemnu_hover');
+	});
+	$('.moduleselect, .lessonlink').mouseleave(function(){
+		$(this).removeClass('homemnu_hover', 500);
+	});
+}
+
+function createMenuLessons(){
+	var menu = '<div id="menu">';
+	menu += '<ul class="nav_menu_modules">';
+	
+	for(var i=0; i<FLVS.Sitemap.module.length; i++){
+
+		var currModule = FLVS.Sitemap.module[i]; //put the current module in a variable, much easier to access and maintain
+		var modID = currModule.modID;
+
+		if(FLVS.Sitemap.module[i].visible == 'true' || getCookie(settings.course_title + ' preview')){
+			menu += '<li>';
+			if (modID == 0) {
+				menu += '<a href="javascript:void(0);" class="modlink">' + currModule.title + '</a>';
+			} else {
+				menu += '<a href="javascript:void(0);" class="modlink">'+currModule.num+ ': '+currModule.title+'</a>';
+			}			
+				
+			// Lessons
+			menu += '<ul class="nav_menu_lessons mod'+(modID)+'">';
+			var submenu = '';
+			var oddNumber = true;
+			
+			for(var j=0; j<currModule.lesson.length; j++){
+				var pages = [];
+				pages[0] = new Object;
+				pages[0].llink = currModule.lesson[j].page[0].href;
+				pages[0].ltitle = currModule.lesson[j].title;
+				pages[0].lnum = currModule.lesson[j].num;
+				pages[0].lmins = currModule.lesson[j].time;
+				pages[0].lpoints = currModule.lesson[j].points;
+				pages[0].minutes = 'mins';
+				if (Number(currModule.lesson[j].time) < 2) {
+					pages[0].minutes = 'min';
+				}
+				pages[0].points = 'pts';
+				if (Number(currModule.lesson[j].points) < 2) {
+					pages[0].points = 'pt';
+				}
+				//find any custom checklist items that should show up as menu items
+				for (var k=0; k<currModule.lesson[j].page.length; k++) {
+					var thisPage = currModule.lesson[j].page[k];
+					if (thisPage.custom != null) {
+						//add to pages
+						var newLesson = new Object;
+						newLesson.llink = thisPage.href;
+						newLesson.ltitle = thisPage.chklistname;
+						newLesson.lnum = thisPage.num;
+						newLesson.lmins = thisPage.time;
+						newLesson.lpoints = thisPage.points;
+						newLesson.minutes = 'mins';
+						if (Number(newLesson.time) < 2) {
+							newLesson.minutes = 'min';
+						}
+						newLesson.points = 'pts';
+						if (Number(newLesson.points) < 2) {
+							newLesson.points = 'pt';
+						}
+						pages[pages.length] = newLesson;
+					}
+				}
+
+
+				for (var l=0; l < pages.length; l++) {
+					submenu += '<li>';
+					//alternate the colors of the lesson blocks
+					var oddClass = "";
+					if (oddNumber) {
+						oddClass = "odd";
+					}
+					oddNumber = !oddNumber;
+					submenu += '<a href="' + pages[l].llink + '" class="'+ oddClass + '"><span class="lesson_num">' + pages[l].lnum + '</span>';
+					submenu += '<span class="lesson_title">' + pages[l].ltitle + '</span><span class="lesson_nfo">' + pages[l].lmins + ' ' + pages[l].minutes + ' | ' + pages[l].lpoints + ' ' + pages[l].points + '</span></a>';
+					submenu += '</li>';
+				}
+				
+			}
+				
+			menu += submenu;
+			menu += '</ul>';
+			menu += '</li>';
+		} // end if visible
+
+	}
+	
+// Remove all modlinks from nav_menu_lessons
+	$('#nav_menu').append(menu);
+	$('.nav_menu_lessons .modlink').remove();
+}
+
+//-------------------need to see if the sitemap is ready, if not lets wait for the ajax to finish---------------------//
+if ( FLVS.Sitemap ) {
+	createIndexLessons();
+	//console.log("hello - FLVS.Sitemap");
+	
+} else {
+	$( document ).ajaxSuccess(function( event, xhr, settings ) {
+	  if ( settings.url == '../../global/xml/sitemap.xml' ) {
+		//console.log("hello - ajaxSuccess");
+		createIndexLessons();
+	  }
+	});
+}
+// console.log('done here');

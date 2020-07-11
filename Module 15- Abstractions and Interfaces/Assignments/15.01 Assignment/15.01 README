@@ -1,0 +1,17 @@
+Project Title: 15.01 Assignment
+Purpose of Project: To demonstrate abstract methods in use
+Version: 03/11/2019
+Author(s): Jack Polk
+
+==========Post Mortem Review==========
+<+s>: This was fun to program and challenged me
+	    First time using abstract methods
+
+<-s>: Initially, I didn't know why my classes weren't instantiating correctly.
+      My parameters in my abstract method not matching was the problem
+
+======================================
+
+Future Improvements:
+   Become more comfortable with abstract methods and how to effectively implement
+   them in my programming

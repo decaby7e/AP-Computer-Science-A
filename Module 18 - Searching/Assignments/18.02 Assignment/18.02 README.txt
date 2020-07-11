@@ -1,0 +1,17 @@
+Project Title: 18.02 Assignment
+Purpose of Project: To demonstrate an understanding of binary searching algorithms
+                    by searching through music objects
+Version: 5/19/2019
+Author(s): Jack Polk
+
+==========Post Mortem Review==========
+<+s>: I was able to effectively traverse and find specific music objects
+      There was minimal errors
+
+<-s>: Some struggle in adapting from lessons example into assignments purposes
+
+======================================
+
+Future Improvements:
+   Create a more elegant implementation of the sorting and in displaying several
+   of the same artist/year/title

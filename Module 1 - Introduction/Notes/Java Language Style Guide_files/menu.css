@@ -1,0 +1,268 @@
+/* CSS Document */
+nav {
+	-webkit-box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, .25);
+	box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, .25);
+	position: fixed;
+	height: 40px;
+}
+nav #menu_inner {
+	padding: 0px;
+	margin: 0 auto;
+	position: relative;
+	width: 1000px;
+}
+#menu_inner .menubtn {
+	color: #7d4d24;
+	width: 120px;
+	text-align: center;
+	font-size: 18px;
+}
+#nav_menu .nav_menu_modules {
+	list-style: none;
+	margin: 0px;
+	position: relative;
+	padding: 2px 5px 5px 5px;
+    width: 300px;
+    box-shadow: 1px 1px 10px #000;
+}
+#nav_menu .nav_menu_modules li .nav_menu_lessons,
+#nav_menu .nav_menu_modules {
+    background: rgba(255, 255, 255, 0.9);
+}
+#nav_menu {
+	padding: 0px 0px;
+	position: fixed;
+}
+#nav_menu .nav_menu_modules li .nav_menu_lessons {
+	top: 0px;
+	left: 300px;
+}
+#nav_menu .nav_menu_modules li a.modlink {
+	font-size: 14px;
+	line-height: 10px;
+	display: block;
+	width: auto;
+	padding: 7px 10px;
+	border-bottom: solid 1px #bdbab5;
+	position: relative;
+	margin: 0;
+	background-color: #FFFFFF;
+	color: #7d4d24;
+	border-radius: 0;
+	-webkit-box-shadow: 1px 1px 5px 0px #949494;
+	-moz-box-shadow: 1px 1px 5px 0px #949494;
+	box-shadow: 1px 1px 5px 0px #949494;
+}
+#nav_menu .nav_menu_modules li .nav_menu_lessons {
+    width: 790px;	
+    padding: 0;
+    box-shadow: 1px 1px 10px black;
+}
+.nav_menu_lessons li {
+    display: inline-table;
+    margin: 4px;
+}
+.nav_menu_lessons li a {
+    display: block;
+    margin: 0;
+    width: 150px;
+    height: 120px;
+    padding: 5px;
+    float: none;
+    border-radius: 0;
+	background-color: #FFFFFF;
+    -webkit-box-shadow: 1px 1px 5px 0px #949494; -moz-box-shadow: 1px 1px 5px 0px #949494; box-shadow: 1px 1px 5px 0px #949494;
+}
+.nav_menu_lessons li a .lesson_num, .nav_menu_lessons li a .lesson_title, .nav_menu_lessons li a .lesson_nfo {
+	color: #7d4d24;
+	line-height: normal;
+}
+.nav_menu_lessons li a .lesson_num {
+	font-family: 'museo100';
+	font-style: normal;
+	font-weight: normal;
+}
+#menu_inner .menubtn:hover, #nav_menu .nav_menu_modules li a.modlink:hover, .nav_menu_lessons li a:hover, .nav_menu_lessons li a.odd:hover {
+	text-decoration: none;
+	background-color: #7d4d24;
+	color: #ffffff;
+}
+.nav_menu_lessons li a:hover {
+	background-color: #7d4d24;
+	text-decoration: none;
+}
+#menu_outer, #nav_menu {
+	width: 1000px;
+}
+#nav_menu {
+    margin: 0;	
+    width: 210px;
+}
+#nav_menu .nav_menu_modules > li:not(last-child) {
+    margin-bottom: 0px;
+}
+#menu_outer {
+    padding: 0;
+    margin: 0 auto;
+}
+#menu_inner .menu_links li a, .pagenums a, .pagenums p, .home {
+	color: #7d4d24;
+}
+#menu_inner .menu_links li a:hover, .pagenums a:hover, .home:hover {
+	background-color: #7d4d24;
+}
+.prevt {
+	background-image: url(../images/global/prev.png);
+}
+.nextt {
+	background-image: url(../images/global/next.png);
+}
+.menu_mobile_nav a {
+	background-color: #7d4d24;
+	color: #ffffff;
+}
+.menu_mobile_nav a:hover {
+	background-color: #C87e3f;
+}
+.navhover {
+	text-decoration: none;
+	background-color: #7d4d24;
+	color: #ffffff;
+}
+/* Full Sized */
+@media (max-width: 1180px) {
+	#menu_outer, #nav_menu, nav #menu_inner {
+		width: 900px;
+	}
+	#nav_menu .nav_menu_modules li .nav_menu_lessons {
+		width: 635px;
+	}
+}
+
+/* Luis' Educator fix 
+@media (max-width: 1015px){
+	#menu_outer, main, #footer_copyright {
+		width: 960px;
+	}
+	#nav_menu .nav_menu_modules li .nav_menu_lessons {
+		width: 790px;
+	}
+	.nav_menu_lessons li a {
+		width: 147px;
+	}
+	#overlay .ovl-content > div {
+		min-width: 220px;
+	}
+}*/
+
+/* Medium Sized */
+@media (max-width: 980px) {
+	#menu_outer, #nav_menu, nav #menu_inner {
+		width: 800px;
+	}
+	.menu_mobile_nav {
+		display: block;
+		width: 100%;
+	}
+	.menu_mobile_nav ul {
+		padding-left: 0px;
+	}
+	.menu_mobile_nav a {
+		width: 100%;
+	}
+	#nav_menu .nav_menu_modules li .nav_menu_lessons {
+		width: 475px;
+		left: 300px;
+	}
+	#menu_rightMobile {
+		width: 260px;
+		float: right;
+	}
+	/*.menu_links {  need to update for ipad and phones 
+		display: none;
+	}*/
+	.menu_mobile_nav .menu_links li {
+		display: none;
+	}
+	/*.menu_links li:last-child {
+		display: none;
+	}*/
+}
+
+/* Small Sized */
+@media (max-width: 767px) {
+	#menu_outer, #nav_menu, nav #menu_inner {
+		width: 100%;
+	}
+	nav #menu_inner .menubtn {
+		width: 90px;
+	}
+	.menu_mobile .menubtn_mobile {
+		margin-left: 10px;
+	}
+	#nav_menu .nav_menu_modules {
+		width: 100%;
+	}
+	#nav_menu .nav_menu_modules li .nav_menu_lessons {
+		width: 100%;
+		padding: 10px;
+	}
+	.menu_mobile_nav .menu_links li {
+		display: block;
+		margin-left: 0px;
+		width: 100%;
+	}
+	.menu_mobile_nav a {
+		width: 100%;
+	}
+	.nav_menu_lessons li {
+		width: 32%;
+	}
+	.nav_menu_lessons li a {
+		height: 60px;
+		width: 100%;
+	}
+	.nav_menu_lessons li a .lesson_nfo {
+		display: none;
+	}
+	.nav_menu_lessons li a.odd {
+		background-color: #ffffff;
+	}
+	.menu_mobile {
+		display: block;
+	}
+	.menu_desktop {
+		display: none;
+	}
+	#nav_menu {
+		position: absolute;
+	}
+}
+
+@media (max-width: 620px) {
+	.nav_menu_lessons li {
+		width: 45%;
+	}
+}
+
+@media (max-width: 500px) {
+	.menu_links,
+	.menu_links li {
+		display: block;
+	}
+}
+
+/* Extra Samll Sized */
+@media (max-width: 480px) {
+	.nav_menu_lessons li {
+		width: 95%;
+	}
+	#nav_menu .nav_menu_modules {
+		margin-bottom: 55px;
+	}
+	#nav_menu .nav_menu_modules li a.modlink {
+		font-size: 15px;
+		line-height: 18px;
+		padding: 10px 10px;
+	}
+}

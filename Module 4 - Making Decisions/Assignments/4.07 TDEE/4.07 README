@@ -1,0 +1,18 @@
+Project Title: 4.07 TDEE
+Purpose of Project: To calculate total daily energy expenditure with logical
+                    operators given user input
+Version: 1/23/2018
+Author(s): Jack Polk
+
+==========Post Mortem Review==========
+<+s>: I was able to effectively implement logical operators
+      My program is able to handle user input errors
+
+<-s>: It was difficult to determine how to handle errors with user input
+      The program because quite bulky with all the "if" and "else if" statements
+======================================
+
+Future Improvements: In the future, I plan to perhaps include the use of nested
+                     "if" statements and more loop commands to increase the
+                     efficiency of the program and its ability to handle user
+                     input errors.

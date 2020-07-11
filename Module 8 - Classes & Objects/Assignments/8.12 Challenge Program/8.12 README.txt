@@ -1,0 +1,19 @@
+Project Title: 8.12 Challenge Program
+Purpose of Project: The purpose of this program is to approximate pi using the Monte Carlo method
+                    through the use of object oriented programming
+Version: 4/18/18
+Author(s): Jack Polk
+
+==========Post Mortem Review==========
+<+s>: I was able to effectively calculate the value of pi using the Monte Carlo
+      method
+      I was able to effectively translate this existing code into one that utilizes
+      object oriented programming
+
+<-s>: The code would become very messy at times
+      Getting the output just right was very tedious
+======================================
+
+Future Improvements: In the future, I would like to clean up the code quite a
+                     bit and perform some optimization on it to ensure the best
+                     possible operation and functionality

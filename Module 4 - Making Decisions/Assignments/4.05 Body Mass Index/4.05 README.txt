@@ -1,0 +1,20 @@
+Project Title: 4.05 Body Mass Index
+Purpose of Project: To calculate the BMI of an individual given their height 
+					in feet and inches and their weight and, with that, give
+					a specific BMI value and category.
+Version: 1/18/2018
+Author(s): Jack Polk
+
+==========Post Mortem Review==========
+<+s>: It was easy to use 'if' and 'else' and 'else if' statements
+	  The use of conditional operators made the code more concise
+
+<-s>: I sometimes forgot semicolons
+	  I initially tried parsing everything, but it proved to be very time consuming
+======================================
+
+Future Improvements: In the future, to improve this program, the use of parsing
+					 to prevent user error and premature program termination
+					 would be tremendously helpful. Another potential improve-
+					 ment would be to optimize the code to use the least
+					 ammount of code as possible.

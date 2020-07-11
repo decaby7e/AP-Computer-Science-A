@@ -1,0 +1,69 @@
+/*======================================
+CSS DOCUMENT FOR MEDIA QUERIES
+HAVE TO CALL IT IN SETTINGS FILE var course_csslibs = ['../global/css/media_queries.css'...
+======================================*/
+
+
+/* Full Sized */
+@media (max-width: 1180px) {
+    #footer_copyright, main, #footer_inner {
+        width: 900px;
+    }
+    /*#bc_container {
+        left: 900px;
+    }*/
+    #content {
+        padding: 30px 80px 100px 80px;
+    }
+}
+
+/* Medium Sized */
+@media (max-width: 980px) {
+    #footer_copyright, main, #footer_inner {
+        width: 800px;
+    }
+    /*#bc_container {
+        left: 800px;
+    }*/
+    #content {
+        padding: 30px 40px 100px 40px;
+    }
+    #breadcrumbs {
+        padding-top: 20px;
+    }
+}
+
+/* Small Sized */
+@media (max-width: 800px) {
+    #footer_copyright, main, #footer_inner {
+        width: 100%;
+    }
+    /*#bc_container {
+        left: 100%;
+    }*/
+    #breadcrumbs {
+        background-position: top left;
+        padding-right: 20px;
+        color: #3b3b3b;
+    }
+}
+@media (max-width: 780px) {
+    .il_interactive, div.mainVersion {
+        display: none;
+    }
+    .video_textVersion {
+        display: block;
+        visibility: visible;
+    }
+}
+@media (max-width: 767px) {
+    body {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+}
+
+/*Extra Samll Sized */
+@media (max-width: 480px) {
+}
+

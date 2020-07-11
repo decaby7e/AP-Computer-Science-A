@@ -1,0 +1,18 @@
+Project Title: 8.11 Assignment
+Purpose of Project: Calculates the amount of carbon dioxide produced in a year from
+                    waste by a household and compares how recycling can reduce the
+                    CO2 footprint.
+Version: 4/18/18
+Author(s): Jack Polk
+
+==========Post Mortem Review==========
+<+s>: The output formatted nicely
+      It didn't take too long to program
+
+<-s>: I had difficulty with using the dataRecord object at first
+      Perfecting the output was tedious
+======================================
+
+Future Improvements: In the future, it would be nice to implement this same use
+                     of ArrayLists with other programs to make the process of
+                     coding much easier.

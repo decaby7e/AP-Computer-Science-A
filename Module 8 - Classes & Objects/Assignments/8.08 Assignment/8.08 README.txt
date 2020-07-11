@@ -1,0 +1,15 @@
+Project Title:alot of the process
+Purpose of Project:
+Version:
+Author(s): Jack Polk
+
+==========Post Mortem Review==========
+<+s>: The array really simplified the coding process
+      The statistics came out exactly how I wanted it
+
+<-s>: The main method in the tester class is rather bulky
+      I was having issues with determining the best way to organize my code
+======================================
+
+Future Improvements: In the future, I would like to cut the main method down
+                     quite a bit and also use object arrays in more programs

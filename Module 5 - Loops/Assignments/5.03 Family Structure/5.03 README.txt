@@ -1,0 +1,20 @@
+Project Title: 5.03 Family Structure
+Purpose of Project: The purpose of this program is to calculate statistics based on
+                    file input about family genders
+Version: 01-31-2018
+Author(s): Jack Polk
+
+==========Post Mortem Review==========
+<+s>: Very quick and concise program
+      Easy to implement required tasks;
+      Simple arithmetic
+
+<-s>: Forgetting to cast in calculations of probability caused percentages to output as 0 at first
+      Hard to clearly define variables at first
+======================================
+
+Future Improvements: In the future, I believe the implementation of some
+                     type of user interface to selecting other text files
+                     would vastly expand the usability of this program.
+                     The same concept could also be applied to more
+                     complex calculations.

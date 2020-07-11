@@ -1,0 +1,15 @@
+Project Title: 12.05 Fibonacci
+Purpose of Project: To calculate the Fibonacci number of index n by use of recursive mechanisms
+Version: 01/10/2019
+Author(s): Jack Polk
+
+==========Post Mortem Review==========
+<+s>: I was able to understand more intuitively how to think recursively
+	    I also was able to make this into an app for Android
+
+<-s>: It was much different than other recursive cases I had completed before, throwing me off a bit
+	    It's been a while since I've programmed a Java application
+======================================
+
+Future Improvements:
+Become more familiar and natural with implementing recursive logic

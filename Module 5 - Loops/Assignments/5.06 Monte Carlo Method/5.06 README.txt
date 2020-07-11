@@ -1,0 +1,22 @@
+
+Project Title: Monte Carlo Method
+Purpose of Project: The purpose of this program is to use the Monte Carlo
+                    sampling method to determine how many fish an individual
+                    may observe before seeing a snapper out of a sample greater
+                    than or equal to 1000 fish
+Version: 2/6/2018
+Author(s): Jack Polk
+
+==========Post Mortem Review==========
+<+s>: I was able to implement most of what I have learned up to this point
+      I added variables to make the program more dynamic; user modifiability
+      could be possible in the future
+<-s>: Getting used to the nested loops was tricky
+      Organizing my code became tricky as well; it was hard to keep track of
+      everything
+======================================
+
+Future Improvements: To make this program better in the future, I believe that
+                     the implementation of user input in determining the species,
+                     specific breed, probability, and more would help to increase
+                     diversity in applications.

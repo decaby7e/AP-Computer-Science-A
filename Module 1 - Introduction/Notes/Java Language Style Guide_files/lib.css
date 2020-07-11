@@ -1,0 +1,544 @@
+/*======================================
+
+CSS DOCUMENT FOR ALL Libraries 
+Colobox, accordions, etc
+
+======================================*/
+
+/* ---------------------------------
+-- OBJECTIVES
+---------------------------------*/
+#content > .ui-dialog {
+    box-shadow: 0px 0px 8px;
+}
+
+
+
+/* ---------------------------------
+-- COLORBOX
+---------------------------------*/
+#cboxTitle {
+    display: none !important;
+}
+
+
+/* ---------------------------------
+-- CLICK TO REVEAL - ACCORDIONS
+---------------------------------*/
+.panel {
+    margin-bottom: 20px;
+    background-color: #e2decf;
+    border: none;
+    border-radius: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.panel-info > .panel-heading {
+    color: #FFFFFF;
+    background-color: #87141e;
+    border-color: #ddd;
+    background-image: none;
+    border: none;
+    border-radius: 0px;
+    filter: none;
+}
+.panel-default > .panel-heading, .panel-primary > .panel-heading {
+    color: #FFFFFF;
+    background-color: #7d4d24;
+    border-color: #ddd;
+    background-image: none;
+    border: none;
+    border-radius: 0px;
+    filter: none;
+}
+.panel .collapsed  {
+    width: 100%;
+    text-align:left;
+    white-space:normal;
+    text-transform:none;
+    border-radius: 0px;
+    background-color: #7d4d24;
+    background-image: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-style: none;
+    border-bottom: 1px solid #f2f0e9;
+}
+.panel-default > .panel-heading:hover, .btn-danger:hover {
+    background-color: #c87e3f;
+}
+.panel-active {
+    background-color: #c87e3f !important;
+}
+.panel-group .panel {
+    border-radius: 0px;
+}
+.panel-body {
+    background-color: #e2decf;
+}
+.panel .panel-body {
+    background-color: transparent;
+    padding: 20px;
+}
+.btn-danger {
+    width: 100%;
+    text-align:left;
+    white-space:normal;
+    text-transform:none;
+    border-radius: 0px;
+    background-color: #7d4d24;
+    background-image: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-style: none;
+    padding: 10px 15px;
+}
+.btn-danger:hover {
+    background-color: #c87e3f;
+}
+.collapse, .collapsing {
+    background: #e2decf;
+    padding: 20px;
+    /*-webkit-box-shadow: inset 5px 5px 30px 0px rgba(125, 77, 36, 0.3);*/
+    /*-moz-box-shadow:    inset 5px 5px 30px 0px rgba(125, 77, 36, 0.3);*/
+    /*box-shadow:         inset 5px 5px 30px 0px rgba(125, 77, 36, 0.3);*/
+}
+.collapse p, .collapsing p {
+    padding: 5px;
+}
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+    text-shadow: none;
+    background-image: none;
+    background: #c87e3f;
+    filter: none;
+    border-style: none;
+    color: #FFF;
+}
+#custom_textVersion .panel-title {
+    clear: none;
+    margin-top: 0px;
+}
+
+/* ---------------------------------
+-- TABBED PANELS
+---------------------------------*/
+.tabs {
+    position: relative;
+}
+.tabs a.tab {
+    color: #FFFFFF;
+    background-image: none;
+    filter: none;
+    background: #4c493c;
+    padding: 10px 15px;
+    margin-right: 2px;
+    -webkit-border-radius: 0px;
+    border: none;
+    border-radius: 0px;
+    font-size: 14px;
+    font-weight: lighter;
+}
+.tabs a.leftAlign {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    margin-right: 0px;
+    margin-bottom: 2px;
+}
+.tabs a.tab:hover, .tabs a.active {
+    background: #c87e3f !important;
+    border-color: transparent;
+    filter: none;
+}
+.tabs div.panel {
+    background-color: #e2decf;
+    border: none;
+    padding: 10px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    min-height: 100%;
+    margin-bottom: 0px;
+}
+.tabs div.panel-block {
+    background-color: #e2decf;
+}
+.tip-top {
+    white-space: nowrap;
+}
+/*a.tab.active {
+	background: #c87e3f !important;
+}*/
+
+
+#pageContent .tab ul.nav.nav-tabs{
+    padding: 0;
+    height: 40px;
+}
+
+#pageContent .tab .tab-pane p, #pageContent .tab .tab-pane ul, #pageContent .tab .tab-pane ol {
+    background: #dfdacc;
+}
+
+
+
+
+
+
+
+.tab .nav-tabs.tab .nav-tabs {
+    border-bottom:0 none;
+}
+.tab .nav-tabs li a{
+    position: relative;
+    padding: 10px;
+    color: #4c493c;
+    font-size: 16px;
+    z-index: 1;
+}
+.tab .nav-tabs li a:hover{
+    background:transparent;
+    border:1px solid transparent;
+}
+.tab .nav-tabs li a:before{
+    content: "";
+    width:100%;
+    height:100%;
+    position:absolute;
+    bottom: 7px;
+    left:-1px;
+    background: #99cccc;
+    border-bottom: 0px none;
+    border-top-right-radius:25px;
+    border-top-left-radius:15px;
+    transform-origin: left center 0;
+    transform: perspective(6px) rotateX(3deg);
+    z-index:-30;
+}
+.tab .nav-tabs li{
+    margin-right: 15px;
+}
+.tab .nav-tabs li.active a:before{
+    background: #4c493c;
+}
+.tab .nav-tabs li.active a,
+.tab .nav-tabs li.active a:focus,
+.tab .nav-tabs li.active a:hover{
+    border:1px solid transparent;
+    background:transparent;
+    color: #fff;
+    font-weight:300;
+    z-index: 2;
+}
+.tab-content .tab-pane{
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+    border: 2px solid #99cccc;
+    padding: 20px;
+    background:#dfdacc;
+    line-height: 22px;
+}
+.tab-content .tab-pane h4{
+    margin-top: 0;
+    font-weight:700;
+    font-size: 20px;
+}
+@media only screen and (max-width: 767px) {
+    .tab .nav-tabs li a{
+        padding: 15px 10px;
+        font-size: 14px;
+    }
+    .tab .nav-tabs li a:before{
+        bottom: 6px;
+    }
+}
+@media only screen and (max-width: 499px) {
+    .tab .nav-tabs li{
+        width:100%;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    .tab .nav-tabs li a:before{
+        bottom: 0;
+        transform: none;
+        border-bottom: 1px solid #408080;
+    }
+}
+/* ---------------------------------
+-- TEXTVERSIONS
+---------------------------------*/
+#externalContent {
+    margin: 0 auto !important;
+    width: 98% !important;
+    height: auto !important;
+    background-color: transparent !important;
+    background-position: top center !important;
+    background-repeat: no-repeat !important;
+    /*border-bottom: solid 20px #bdbab5 !important;*/
+    margin-bottom: 40px !important;
+    background-color: #f2f0e9 !important;
+    padding: 30px !important;
+}
+.printText, .printIt {
+}
+div.activeInteractive/*, div.videoInteractive, div.audioInteractive, div.textVersion, div.video_textVersion, div.audio_textVersion, div.ilShell*/ {
+    margin: 0 auto;
+    padding: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    border: none;
+}
+div.textVersion {
+    /*background: url(../images/global/ishell_bg.jpg);*/
+/*  JP 20170130
+	padding: 0px; */
+    padding: 10px;
+}
+hr.dashed {
+/*  JP 20170130
+	margin: 0px; */
+	margin: 0 0 20px;
+    padding: 0px;
+}
+
+
+/* ---------------------------------
+-- SLIDESHOW -- CAROUSEL
+------------------------------------*/
+div.mainVersion {
+    margin: 10px auto 0;
+    position: relative;
+    padding: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    border: none;
+}
+.carousel {
+    margin-bottom: 0px;
+    border: solid 1px #7E171C;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background: #e2decf;
+    padding: 65px 15px 10px 15px;
+}
+.carousel-inner >.item {
+    min-height: 340px;
+}
+.carousel-inner >.item h2 {
+    margin: 0px 0px 15px 0px;
+}
+.carousel-indicators {
+    width: 100%;
+    text-align: center;
+}
+.carousel-indicators li {
+    background-image: url(../images/global/pagination.png) !important;
+}
+.carousel-control.left, .carousel-control.right {
+    color: #7d4d24;
+    z-index: 100;
+    filter: none;
+}
+.carousel-control.left:hover, .carousel-control.right:hover {
+    color: #c87e3f;
+    opacity: 1;
+}
+.carousel-control.right {
+    left: inherit;
+    right: 0px;
+}
+.carousel-control.left {
+    right: inherit;
+    left: 0px;
+}
+
+
+/* ---------------------------------
+-- Roundabout
+------------------------------------*/
+
+
+/* ---------------------------------
+-- PROGRESS BAR
+------------------------------------*/
+
+
+/* ---------------------------------
+-- MODAL POPUPS
+------------------------------------*/
+.btn-xs {
+    padding: 1px 5px;
+    margin-top: -2px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: none !important;
+    color: #7d4d24 !important;
+    line-height: 1.5;
+    border-radius: 0px;
+    background-color: rgba(190, 180, 152, 0.3) !important;
+    background: rgba(190, 180, 152, 0.3) !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+.btn-xs:hover {
+    text-decoration:underline;
+    color: #c87e3f !important;
+}
+.btn-xs > .glyphicon-new-window, .btn-xs > .glyphicon-print {
+    float: left;
+    margin: 2px 5px 0px 0px;
+}
+.lister { /* for when they are stacked */
+    margin-bottom: 4px;
+}
+
+
+/* ---------------------------------
+-- TOOLTIPS
+------------------------------------*/
+.tooltip {
+    position: absolute;
+    z-index: 1030;
+    display: block;
+    visibility: visible;
+    font-size: 12px;
+    line-height: 1.4;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.tooltip.in {
+    opacity: .9;
+    filter: alpha(opacity=90);
+}
+.tooltip.top {
+    margin-top: -3px;
+    padding: 5px 0;
+}
+.tooltip.right {
+    margin-left: 3px;
+    padding: 0 5px;
+}
+.tooltip.bottom {
+    margin-top: 3px;
+    padding: 5px 0;
+}
+.tooltip.left {
+    margin-left: -3px;
+    padding: 0 5px;
+}
+.tooltip-inner {
+    max-width: 210px; /* changed from 200px */
+    padding: 3px 8px;
+    color: #fff;
+    text-align: left;
+    text-decoration: none;
+    background-color: #87141e;
+    border-radius: 4px;
+    white-space: normal;
+}
+.tooltip-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+}
+.tooltip.top .tooltip-arrow {
+    bottom: 0;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px 5px 0;
+    border-top-color: #87141e;
+}
+.tooltip.top-left .tooltip-arrow {
+    bottom: 0;
+    left: 5px;
+    border-width: 5px 5px 0;
+    border-top-color: #87141e;
+}
+.tooltip.top-right .tooltip-arrow {
+    bottom: 0;
+    right: 5px;
+    border-width: 5px 5px 0;
+    border-top-color: #87141e;
+}
+.tooltip.right .tooltip-arrow {
+    top: 50%;
+    left: 0;
+    margin-top: -5px;
+    border-width: 5px 5px 5px 0;
+    border-right-color: #87141e;
+}
+.tooltip.left .tooltip-arrow {
+    top: 50%;
+    right: 0;
+    margin-top: -5px;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #87141e;
+}
+.tooltip.bottom .tooltip-arrow {
+    top: 0;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 0 5px 5px;
+    border-bottom-color: #87141e;
+}
+.tooltip.bottom-left .tooltip-arrow {
+    top: 0;
+    left: 5px;
+    border-width: 0 5px 5px;
+    border-bottom-color: #87141e;
+}
+.tooltip.bottom-right .tooltip-arrow {
+    top: 0;
+    right: 5px;
+    border-width: 0 5px 5px;
+    border-bottom-color: #87141e;
+}
+.popover.right { /* removing clickable tooltips - FW update needed */
+    display: none !important;
+}
+/* ---------------------------------
+-- TOOLTIPS - custom and not needed anymore. however not going back to change the previous ones.
+	leave this for now
+------------------------------------*/
+a.tooltips {
+    position: relative;
+    display: inline;
+    cursor: help;
+}
+a.tooltips span {
+    position: absolute;
+    width: 200px;
+    color: #FFFFFF;
+    background: #87141E;
+    height: auto;
+    line-height: normal;
+    text-align: left;
+    visibility: hidden;
+    border-radius: 4px;
+    padding: 4px;
+    font-weight: normal;
+    font-size: 12px;
+}
+a.tooltips span:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -8px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid #87141E;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+}
+a:hover.tooltips span {
+    visibility: visible;
+    opacity: 1;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -100px;
+    z-index: 999;
+}

@@ -1,0 +1,6 @@
+Original Alphabet: abcdefghijklmnopqrstuvwxyz
+Cipher Alphabet:   KMGVZOTQACESNWYBDXFIHPJLRU
+
+
+Ciphertext Message: OAXFI A MZSAZPZ IQKI IQAF WKIAYW FQYHSV GYNNAI AIFZSO IY KGQAZPAWT
+Plaintext Message: first i believe that this nation should commit itself to achieving 

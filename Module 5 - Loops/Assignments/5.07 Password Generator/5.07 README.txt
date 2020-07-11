@@ -1,0 +1,21 @@
+Project Title: 5.07 Password Generator
+Purpose of Project: To generate random passwords that are at least 6 characters in length
+                    with different variations, all based on user input, and output these
+                    passwords to a text file, which is then read back to the user through
+                    the terminal.
+Version: 2/11/18
+Author(s): Jack Polk
+
+==========Post Mortem Review==========
+<+s>: I was able to effectively accomplish my goal
+      I used plenty of variables to make sure that the program was flexible and
+      able to adapt to future changes
+
+<-s>: It was hard to implement all the different techniques I have learned up to
+      this point in a single program
+      I had issues with figuring out how to correctly pick ASCII values using
+      conditional operators
+======================================
+
+Future Improvements: In the future, I could add more options to make the program
+                     more useful and perhaps even add a GUI.
